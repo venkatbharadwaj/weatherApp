@@ -1,0 +1,24 @@
+<div>
+
+ <table>
+    <thead>
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tus</th>
+        <th>Wed</th>
+        <th>Thr</th>
+        <th>Fri</th>
+        <th>Sat</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in rows track by $index">
+        <td ng-repeat = "col in cols  track by $index">
+            {{monthData[$parent.$index * 7 + $index].date | date:'d'}}
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>

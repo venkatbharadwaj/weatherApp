@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    body {
+        font: 13px/22px 'Lato', sans-serif;
+    }
+    #banner {
+        background: #e9e6e1;
+        width: 100%;
+    }
+    .intro_wrapper {
+        margin: 0 auto;
+        padding: 0 0 20px;
+    }
+    .container {
+        width: 1170px;
+    }
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container:before, .container:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    .inner_content {
+        padding: 10px 0 0 0;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 300;
+    }
+    h1.title {
+        font-size: 50px;
+        line-height: 35px;
+        font-weight: 700;
+        margin-bottom: 35px;
+        text-align: left;
+    }
+    h1.intro {
+        line-height: 40px;
+        font-weight: 300;
+    }
+    a {
+        color: #f1592a;
+        text-decoration: none;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+    a, a:visited {
+        text-decoration: none!important;
+    }
+
+</style>
+<style>
+    #footer {
+        background-color: #2980B9;
+        padding: 22px 0 20px;
+        text-align: center;
+    }
+    #footer h1 {
+        letter-spacing: 0.25em;
+        font-size: 20px;
+        color: #eee;
+        text-transform: uppercase;
+        margin-bottom: 0.5em!important;
+    }
+    .follow_us {
+        text-align: center;
+    }
+    .follow_us a.zocial {
+        font-size: 36px;
+        width: 77px;
+        margin: 0 10px 0 0;
+        text-align: center;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        background: transparent;
+        opacity: 0.2;
+    }
+    .zocial, a.zocial {
+        background: #2BA6CB;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        position: relative;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .zocial.twitter:before {
+        content: "T";
+    }
+    .zocial.facebook:before {
+        content: "f";
+    }
+    .zocial.linkedin:before {
+        content: "L";
+    }
+    .zocial:before {
+        content: "";
+        float: left;
+        font: 120%/1.65 zocial;
+        font-style: normal;
+        font-weight: normal;
+        margin: 0 0.5em 0 0;
+        padding: 0 0.5em;
+        text-align: center;
+        text-decoration: none;
+        -moz-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+    }
+</style>
+<style>
+    #footer2 {
+        position: relative;
+        text-align: center;
+        padding: 23px 0 20px;
+        background: #323A45;
+        color: #999;
+        margin: 0 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .row {
+        margin-left: -30px;
+    }
+    .row:before, .row:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    .span12 {
+        width: 1170px;
+        float: left;
+        min-height: 1px;
+        margin-left: 30px;
+    }
+
+
+</style>
+<style>
+    .header {
+        padding: 0 0;
+        background: #323A45;
+        margin: 0 auto;
+        height: 90px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .logo a {
+        float: left;
+        margin: 20px 0 0 0;
+        webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        vertical-align: middle;
+    }
+    img {
+        vertical-align: top;
+        ms-interpolation-mode: bicubic;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+    }
+    nav {
+        display: block;
+    }
+    .menu_wrap {
+        float: right;
+        margin-top: 1px;
+        margin-right: -10px;
+    }
+    .nav {
+        margin-bottom: 20px;
+        margin-left: 0;
+        list-style: none;
+    }
+    ul, ol {
+        padding: 0;
+        margin: 0 0 10px 25px;
+    }
+    .menu_wrap .nav > li {
+        padding: 0 0;
+        display: inline-block;
+        height: 20px;
+        margin-top: 0px;
+        width: 140px;
+    }
+    .menu_wrap .nav li {
+        list-style: none;
+        float: left;
+        margin: 0;
+        position: relative;
+    }
+    li {
+        line-height: 20px;
+    }
+    .menu_wrap .nav li a {
+        font-weight: 400;
+        color: #bbb;
+        letter-spacing: 2px;
+        font-size: 15px;
+        display: block;
+        padding: 36px 0px 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #main_menu select {
+        display: none;
+        font-size: 12px;
+    }
+    select {
+        outline: none;
+        text-decoration: none;
+    }
+    select {
+        width: 220px;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        padding: 4px 6px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #555555;
+        vertical-align: middle;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    select, input[type="file"] {
+        height: 30px;
+        line-height: 30px;
+    }
+    .menu_wrap .nav ul {
+        background: #fff;
+        display: none;
+        left: -25px;
+        padding: 0;
+        position: absolute;
+        top: 80px;
+        width: 200px;
+        z-index: 300;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #323A45;
+    }
+    .menu_wrap .nav ul li a {
+        text-decoration: none;
+        color: #bbb;
+        width: 180px;
+        border: 0;
+
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0;
+        padding: 8px 20px !important;
+        text-align: left;
+        text-transform: none;
+        webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    .menu_wrap .nav li a {
+        font-weight: 400;
+        color: #bbb;
+        letter-spacing: 2px;
+        font-size: 15px;
+        display: block;
+        padding: 36px 0px 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .menu_wrap .nav ul li a span {
+        display: none;
+    }
+    span {
+        font-weight: 700;
+    }
+    .menu_wrap .nav > li > a:hover, .menu_wrap .nav > li > a:focus {
+        background: #323A45;
+        color: #2980B9;
+    }
+    .menu_wrap .nav > li > ul li > a:hover {
+        color: #fff;
+    }
+</style>
+<body>
+<div id="banner">
+    <div class="container intro_wrapper">
+        <div class="inner_content">
+            <h1>Careers</h1>
+            <h1 class="title">Current Openings</h1>
+            <h1 class="intro">
+                Don't see your position? <a href="mailto: jobs@fissionlabs.in">Drop us a line</a> and lets talk. </h1>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <h1>Get the latest updates...</h1>
+
+    <div class="follow_us">
+        <a href="#" class="zocial twitter"></a>
+        <a href="#" class="zocial facebook"></a>
+        <a href="#" class="zocial linkedin"></a>
+    </div>
+</div>
+<div id="footer2">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="copyright">2014 Fission Labs - All Rights Reserved</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <!--logo-->
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="../images/fission-logo-white.png"></a>
+        </div>
+        <!--menu-->
+        <nav id="main_menu">
+            <div class="menu_wrap">
+                <ul class="nav sf-menu sf-js-enabled sf-arrows">
+                    <li class="sub-menu"><a href="javascript:{}" class="sf-with-ul">What We Do</a>
+                        <ul style="display: block;">
+                            <li><a href="services-apps.html"><span>--</span> Scalable Cloud Applications</a></li>
+                            <li><a href="services-data.html"><span>--</span> Data Analytics</a></li>
+                            <li><a href="services-mobile.html"><span>--</span> Mobile Apps</a></li>
+                            <li><a href="services-cloud.html"><span>--</span> Cloud Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="last"><a href="careers.html">Careers</a></li>
+                    <li class="last"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!--<select><option selected="selected" value="">Go to...</option><option value="javascript:{}">What We Do</option><option value="services-apps.html">-- Scalable Cloud Applications</option><option value="services-data.html">-- Data Analytics</option><option value="services-mobile.html">-- Mobile Apps</option><option value="services-cloud.html">-- Cloud Management</option><option value="careers.html">Careers</option><option value="contact.html">Contact Us</option></select>-->
+            </div>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

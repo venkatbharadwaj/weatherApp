@@ -1,0 +1,6 @@
+<div ui-view>
+<h2>{{month}}</h2>
+<span class="glyphicon glyphicon-chevron-left" ng-click="prev(month)"ng-class="{'disabled':(month==1)}"></span>
+<span class="glyphicon glyphicon-chevron-right" ng-click="next(month)" ng-class="{'disabled':(month==12)}"></span>
+<calender month = {{month}}></calender>
+</div>
